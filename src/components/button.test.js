@@ -10,7 +10,7 @@ describe('<Button />', () => {
     it('Should call props.onClick when the button is clicked', () => {
         const wrapper = shallow(<Button onClick={onClick}/>);
         wrapper.find('button').simulate('click');
-        // I added the line below to asser that the mock function by the 
+        // I added the line below to assert that the mock function by the 
         // name of onClick is called. 
         expect(onClick).toHaveBeenCalled();
     });
